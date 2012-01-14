@@ -6,7 +6,7 @@ class TestGroup
 {
     private $id;
     
-    public function __construct($id)
+    public function __construct($id = 5)
     {
         $this->id = $id;
     }
@@ -16,5 +16,8 @@ class TestGroup
     {
         return $this->id;
     }
-            
+    public function getName()
+    {
+        return "group".$this->id;
+    }            
 }

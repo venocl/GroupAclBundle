@@ -7,6 +7,9 @@ use Venocl\GroupACLBundle\Tests\TestGroup;
 
 class TestUser
 {
+    public function __toString() {
+        return 'my_username';
+    }
     public function getGroups()
     {
         $g1 = new TestGroup(1);
